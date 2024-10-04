@@ -21,12 +21,12 @@ def play_video(video_source):
         else:
             camera.release()
             break
-dir = os.getcwd()
+
 st.set_page_config(
     page_title="Fire/smoke-detection",
     page_icon="🔥",
     layout="centered",
-    initial_sidebar_state="expanded"
+    initial_sidebar_state="expanded",
     st.write(dir)
 )
 
