@@ -4,7 +4,6 @@ import cv2
 import numpy as np
 import io
 import PIL
-import os
 from PIL import Image
 from camera_input_live import camera_input_live
 
@@ -26,9 +25,7 @@ st.set_page_config(
     page_title="Fire/smoke-detection",
     page_icon="🔥",
     layout="centered",
-    initial_sidebar_state="expanded",
-    st.write(dir)
-)
+    initial_sidebar_state="expanded")
 
 st.title("Fire/smoke-detection Project :fire:")
 source_radio = st.sidebar.radio("Select Source",["IMAGE","VIDEO","WEBCAM"])
